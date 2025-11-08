@@ -20,7 +20,78 @@
 }
 
 body {
-  background: var(--background);
+  --grad-1: #0f0c29;
+  --grad-2: #302b63;
+  --grad-3: #24243e;
+  background: radial-gradient(circle at 20% 20%, #3b0764, #1e1b4b 50%, #0f172a 90%);
+  min-height: 100dvh;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
+
+.hero-gradient {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899 40%, #f59e0b 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.avatar-wrapper {
+  width: 320px;
+  max-width: 55vw;
+  aspect-ratio: 1/1;
+  position: relative;
+  cursor: pointer;
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.35));
+  transition: transform 0.6s cubic-bezier(.34,1.56,.64,1), filter 0.4s ease;
+}
+.avatar-wrapper:hover {
+  transform: scale(1.05) rotate(2deg);
+  filter: drop-shadow(0 15px 35px rgba(236,72,153,0.45));
+}
+.avatar-wrapper:active { transform: scale(0.98); }
+
+.pulse-ring {
+  position: absolute;
+  inset: -14%;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 30% 30%, rgba(236,72,153,0.35), rgba(59,130,246,0.15) 60%, transparent 70%);
+  animation: pulse 3.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(0.9); opacity: .75; }
+  50% { transform: scale(1.05); opacity: .35; }
+}
+
+.glass-panel {
+  backdrop-filter: blur(18px) saturate(160%);
+  background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 32px;
+  padding: clamp(1.5rem, 2vw, 2.5rem);
+  box-shadow: 0 8px 40px -8px rgba(0,0,0,0.55);
+}
+
+.glow-button {
+  position: relative;
+  isolation: isolate;
+}
+.glow-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(120deg, #8b5cf6, #ec4899, #f59e0b);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: .85;
+  filter: blur(4px) brightness(1.1);
+  transition: opacity .4s ease;
+  pointer-events: none;
+}
+.glow-button:hover::before { opacity: 1; }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylized female avatar">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fcd7b8"/>
+      <stop offset="100%" stop-color="#f4b89a"/>
+    </linearGradient>
+    <linearGradient id="dress" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="240" cy="240" r="220" fill="url(#bg)"/>
+
+  <!-- Shoulder / torso shape -->
+  <path d="M120 380c20-60 80-90 120-90s100 30 120 90v20H120v-20z" fill="url(#dress)" opacity="0.9"/>
+
+  <!-- Neck / face -->
+  <ellipse cx="240" cy="250" rx="55" ry="70" fill="url(#skin)"/>
+  <rect x="215" y="285" width="50" height="28" rx="10" fill="url(#skin)"/>
+
+  <!-- Hair -->
+  <path d="M170 210c0-58 42-96 95-96 53 0 95 38 95 96 0 34-12 68-30 92-6 8-16 13-26 13h-10c6-10 10-22 10-35 0-40-32-72-72-72s-72 32-72 72c0 13 4 25 10 35h-10c-10 0-20-5-26-13-18-24-30-58-30-92z" fill="url(#hair)"/>
+
+  <!-- Eyes -->
+  <circle cx="220" cy="245" r="6" fill="#111827"/>
+  <circle cx="260" cy="245" r="6" fill="#111827"/>
+
+  <!-- Smile -->
+  <path d="M220 268c8 10 32 10 40 0" stroke="#b45309" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Subtle light -->
+  <circle cx="160" cy="120" r="20" fill="#fff" opacity="0.15"/>
+</svg>
