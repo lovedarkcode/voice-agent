@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Original vector artwork created for this project. Free to use. -->
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anime style girl avatar">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="50%" stop-color="#DB2777"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1F2937"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD9C2"/>
+      <stop offset="100%" stop-color="#F8BFA3"/>
+    </linearGradient>
+    <linearGradient id="kimono" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <radialGradient id="blush" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) rotate(0) scale(1 1)">
+      <stop stop-color="#FCA5A5"/>
+      <stop offset="1" stop-color="#FCA5A5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="320" cy="320" r="290" fill="url(#bg)"/>
+
+  <!-- Shoulders / kimono -->
+  <path d="M130 500c30-90 110-130 190-130s160 40 190 130v30H130v-30z" fill="url(#kimono)" opacity="0.95"/>
+
+  <!-- Neck & face base -->
+  <rect x="285" y="330" width="70" height="38" rx="14" fill="url(#skin)"/>
+  <ellipse cx="320" cy="295" rx="90" ry="110" fill="url(#skin)"/>
+
+  <!-- Hair (anime bangs + sides) -->
+  <path d="M210 270c0-90 70-140 150-140 80 0 150 50 150 140 0 60-24 112-60 140-10 8-24 12-38 10-6-1-12-3-16-6 8-14 12-30 12-48 0-58-47-105-106-105s-106 47-106 105c0 18 4 34 12 48-4 3-10 5-16 6-14 2-28-2-38-10-36-28-60-80-60-140z" fill="url(#hair)"/>
+
+  <!-- Eyes (big anime eyes) -->
+  <g>
+    <ellipse cx="285" cy="300" rx="22" ry="28" fill="#fff"/>
+    <ellipse cx="355" cy="300" rx="22" ry="28" fill="#fff"/>
+    <circle cx="285" cy="305" r="12" fill="#0F172A"/>
+    <circle cx="355" cy="305" r="12" fill="#0F172A"/>
+    <circle cx="290" cy="298" r="5" fill="#9CA3AF"/>
+    <circle cx="360" cy="298" r="5" fill="#9CA3AF"/>
+  </g>
+
+  <!-- Brows -->
+  <path d="M260 275c14-6 28-6 42 0" stroke="#0F172A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M338 275c14-6 28-6 42 0" stroke="#0F172A" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Nose & Smile -->
+  <path d="M318 318c-2 4-2 6 0 10" stroke="#7C2D12" stroke-width="3" stroke-linecap="round"/>
+  <path d="M290 340c18 14 42 14 60 0" stroke="#B45309" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- Blush -->
+  <ellipse cx="255" cy="330" rx="18" ry="10" fill="#FCA5A5" opacity="0.45"/>
+  <ellipse cx="385" cy="330" rx="18" ry="10" fill="#FCA5A5" opacity="0.45"/>
+
+  <!-- Hair shine -->
+  <path d="M248 214c30-30 70-40 120-26" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Small sparkles -->
+  <g fill="#fff" opacity="0.7">
+    <circle cx="170" cy="150" r="4"/>
+    <circle cx="150" cy="190" r="3"/>
+    <circle cx="470" cy="160" r="4"/>
+    <circle cx="495" cy="200" r="3"/>
+  </g>
+</svg>

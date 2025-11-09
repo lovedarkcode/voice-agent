@@ -61,8 +61,8 @@ export default function Home() {
   return (
     <>
     <header className="w-full px-6 py-4 flex items-center justify-between backdrop-blur-md bg-white/5 border-b border-white/10">
-      <div className="flex items-center gap-2 font-bold tracking-wide text-sm">
-  <span className="inline-block w-2 h-2 rounded-full bg-linear-to-r from-fuchsia-500 via-pink-500 to-orange-400 animate-pulse" />
+    <div className="flex items-center gap-2 font-bold tracking-wide text-sm">
+  <span className="inline-block w-2 h-2 rounded-full bg-linear-to-r from-cyan-400 via-violet-400 to-rose-400 animate-pulse" />
         <span className="uppercase text-white/80">Voice Agent</span>
       </div>
       <nav className="hidden md:flex gap-6 text-xs text-white/60">
@@ -71,17 +71,34 @@ export default function Home() {
       </nav>
     </header>
 
-    <main className="min-h-[calc(100vh-160px)] w-full flex items-center justify-center p-6">
-      <div className="glass-panel max-w-4xl w-full grid md:grid-cols-2 gap-10 items-center">
+    <main className="relative min-h-[calc(100vh-160px)] w-full flex items-center justify-center p-6">
+      {/* Decorative background elements */}
+      <div className="orb pink floaty -z-10" style={{ top: '10%', left: '5%' }} />
+      <div className="orb blue floaty -z-10" style={{ bottom: '15%', right: '8%' }} />
+      <div className="orb amber floaty -z-10" style={{ top: '40%', right: '15%' }} />
+      <div className="beam -z-10" />
+
+      <div className="glass-panel max-w-6xl w-full grid md:grid-cols-2 gap-14 items-center">
         <div className="space-y-5">
-          <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight hero-gradient">Your Best Buddy</h1>
+          <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight hero-gradient">
+            Your <span className="section-gradient">Best Buddy</span>
+          </h1>
           <p className="text-base sm:text-lg text-white/70 leading-relaxed">
             Meet your AI companion. Click the avatar to start a realtime conversation.
           </p>
-          <div className="hidden md:flex gap-2 text-xs text-white/50">
-            <span className="inline-flex items-center gap-1 rounded-full px-2 py-1 bg-white/5 border border-white/10">Realtime</span>
-            <span className="inline-flex items-center gap-1 rounded-full px-2 py-1 bg-white/5 border border-white/10">Voice</span>
-            <span className="inline-flex items-center gap-1 rounded-full px-2 py-1 bg-white/5 border border-white/10">MCP-ready</span>
+          <div className="grid grid-cols-3 gap-3 mt-6">
+            <div className="feature-card p-3 text-center text-xs text-white/70">
+              <div className="mb-1 font-medium text-white">Realtime</div>
+              <div className="opacity-70">Low latency interactions</div>
+            </div>
+            <div className="feature-card p-3 text-center text-xs text-white/70">
+              <div className="mb-1 font-medium text-white">Voice</div>
+              <div className="opacity-70">Speak & hear responses</div>
+            </div>
+            <div className="feature-card p-3 text-center text-xs text-white/70">
+              <div className="mb-1 font-medium text-white">Extensible</div>
+              <div className="opacity-70">Future tool plugins</div>
+            </div>
           </div>
         </div>
 
@@ -96,7 +113,7 @@ export default function Home() {
           >
             <span className="pulse-ring" />
             <Image
-              src="/lady.svg"
+              src="/anime-girl.png"
               alt="Assistant avatar"
               fill
               priority
